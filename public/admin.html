@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack - Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerenciamento (Staff)</h2>
+        <form id="formAdmin">
+            <div class="form-group">
+                <label>Nível de Acesso (Perfil)</label>
+                <select id="admPerfil" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 5px;">
+                    <option value="Cuidador">Cuidador</option>
+                    <option value="Convidado">Convidado</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+            </div>
+            <button type="submit" id="btnAdmin" class="btn" style="background-color: #e67e22;">Acessar Painel</button>
+        </form>
+        <div id="msgAdmin" class="mensagem"></div>
+        <a href="index.html">Voltar ao Início</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
