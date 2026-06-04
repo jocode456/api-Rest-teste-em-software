@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-06-04T18:54:51.100549" rpa="false" schemaversion="5">
+<suite id="s1" name="Cadastro" source="C:\Users\diasa\OneDrive\Desktop\TesteDeSoftaware\api-Rest-teste-em-software\cadastro.robot">
+<test id="s1-t1" name="CT01 - Deve realizar cadastro com dados válidos" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:51.512214" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/cadastro.html'.</msg>
+<arg>http://localhost:8080/cadastro.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T18:54:51.512214" elapsed="3.802813"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:54:56.319458" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:54:55.316857" elapsed="1.002601"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:56.321491" level="INFO">Typing text 'teste123@gmail.com' into text field 'id=cadEmail'.</msg>
+<arg>id=cadEmail</arg>
+<arg>teste123@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:54:56.320473" elapsed="0.195402"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:56.515875" level="INFO">Typing password into text field 'id=cadSenha'.</msg>
+<msg time="2026-06-04T18:54:56.577789" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=cadSenha</arg>
+<arg>12345678</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:54:56.515875" elapsed="0.150311"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:56.668304" level="INFO">Typing text '2000-01-25' into text field 'id=cadData'.</msg>
+<arg>id=cadData</arg>
+<arg>2000-01-25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:54:56.666186" elapsed="0.149201"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:56.815387" level="INFO">Clicking element 'id=btnCadastrar'.</msg>
+<arg>id=btnCadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:54:56.815387" elapsed="0.128437"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:54:58.944016" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:54:56.943824" elapsed="2.000192"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:58.945129" level="INFO">Verifying element 'id=msgCadastro' contains exact text 'Registrado com sucesso'.</msg>
+<arg>id=msgCadastro</arg>
+<arg>Registrado com sucesso</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-06-04T18:54:58.945129" elapsed="0.048482"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:54:59.083292" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct01_cadastro_sucesso.png"&gt;&lt;img src="evidencia_ct01_cadastro_sucesso.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct01_cadastro_sucesso.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-04T18:54:58.993611" elapsed="0.089681"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-04T18:54:59.085058" elapsed="2.511949"/>
+</kw>
+<status status="PASS" start="2026-06-04T18:54:51.512214" elapsed="10.084793"/>
+</test>
+<test id="s1-t2" name="CT02 - Deve validar email obrigatório" line="17">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:01.599793" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/cadastro.html'.</msg>
+<arg>http://localhost:8080/cadastro.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T18:55:01.599016" elapsed="1.871243"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:04.470638" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:03.470259" elapsed="1.000379"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:04.471713" level="INFO">Typing password into text field 'id=cadSenha'.</msg>
+<msg time="2026-06-04T18:55:04.533228" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=cadSenha</arg>
+<arg>12345678</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:04.471713" elapsed="0.152039"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:04.623752" level="INFO">Typing text '2000-01-25' into text field 'id=cadData'.</msg>
+<arg>id=cadData</arg>
+<arg>2000-01-25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:04.623752" elapsed="0.102441"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:04.731519" level="INFO">Clicking element 'id=btnCadastrar'.</msg>
+<arg>id=btnCadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:04.726193" elapsed="0.100370"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:05.829037" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:04.828662" elapsed="1.000375"/>
+</kw>
+<kw name="Element Should Be Focused" owner="SeleniumLibrary">
+<arg>id=cadEmail</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="PASS" start="2026-06-04T18:55:05.829037" elapsed="0.033219"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:06.005516" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct02_email_obrigatorio.png"&gt;&lt;img src="evidencia_ct02_email_obrigatorio.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct02_email_obrigatorio.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-04T18:55:05.864269" elapsed="0.141247"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-04T18:55:06.005516" elapsed="2.464450"/>
+</kw>
+<status status="PASS" start="2026-06-04T18:55:01.597007" elapsed="6.872959"/>
+</test>
+<test id="s1-t3" name="CT03 - Deve validar senha obrigatória" line="28">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:08.469966" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/cadastro.html'.</msg>
+<arg>http://localhost:8080/cadastro.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T18:55:08.469966" elapsed="1.788902"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:11.259591" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:10.258868" elapsed="1.000723"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:11.261608" level="INFO">Typing text 'dias@gmail.com' into text field 'id=cadEmail'.</msg>
+<arg>id=cadEmail</arg>
+<arg>dias@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:11.259591" elapsed="0.186096"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:11.445687" level="INFO">Typing text '2000-01-25' into text field 'id=cadData'.</msg>
+<arg>id=cadData</arg>
+<arg>2000-01-25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:11.445687" elapsed="0.126568"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:11.574718" level="INFO">Clicking element 'id=btnCadastrar'.</msg>
+<arg>id=btnCadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:11.572255" elapsed="0.123465"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:12.701116" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:11.695720" elapsed="1.005396"/>
+</kw>
+<kw name="Element Should Be Focused" owner="SeleniumLibrary">
+<arg>id=cadSenha</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="PASS" start="2026-06-04T18:55:12.701116" elapsed="0.053814"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:12.947445" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct03_senha_obrigatoria.png"&gt;&lt;img src="evidencia_ct03_senha_obrigatoria.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct03_senha_obrigatoria.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-04T18:55:12.754930" elapsed="0.192515"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-04T18:55:12.947445" elapsed="2.651267"/>
+</kw>
+<status status="PASS" start="2026-06-04T18:55:08.469966" elapsed="7.128746"/>
+</test>
+<test id="s1-t4" name="CT04 - Deve validar senha inválida (menos de 8 caracteres)" line="39">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:15.598712" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/cadastro.html'.</msg>
+<arg>http://localhost:8080/cadastro.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T18:55:15.598712" elapsed="1.956465"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:18.555881" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:17.555177" elapsed="1.000704"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:18.555881" level="INFO">Typing text 'dias@gmail.com' into text field 'id=cadEmail'.</msg>
+<arg>id=cadEmail</arg>
+<arg>dias@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:18.555881" elapsed="0.156096"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:18.711977" level="INFO">Typing password into text field 'id=cadSenha'.</msg>
+<msg time="2026-06-04T18:55:18.770878" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=cadSenha</arg>
+<arg>123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:18.711977" elapsed="0.110561"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:18.822538" level="INFO">Typing text '2000-01-25' into text field 'id=cadData'.</msg>
+<arg>id=cadData</arg>
+<arg>2000-01-25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:18.822538" elapsed="0.188993"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:19.011531" level="INFO">Clicking element 'id=btnCadastrar'.</msg>
+<arg>id=btnCadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:19.011531" elapsed="0.150113"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:21.164430" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:19.163880" elapsed="2.000550"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:21.164998" level="INFO">Verifying element 'id=msgCadastro' contains exact text 'Senha inválida'.</msg>
+<arg>id=msgCadastro</arg>
+<arg>Senha inválida</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-06-04T18:55:21.164998" elapsed="0.057586"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:21.313743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct04_senha_invalida.png"&gt;&lt;img src="evidencia_ct04_senha_invalida.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct04_senha_invalida.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-04T18:55:21.222584" elapsed="0.091159"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-04T18:55:21.313743" elapsed="2.481977"/>
+</kw>
+<status status="PASS" start="2026-06-04T18:55:15.598712" elapsed="8.198223"/>
+</test>
+<test id="s1-t5" name="CT05 - Deve validar email inválido" line="51">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:23.799240" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/cadastro.html'.</msg>
+<arg>http://localhost:8080/cadastro.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-04T18:55:23.796935" elapsed="1.639823"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:26.441325" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:25.436758" elapsed="1.004567"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:26.441325" level="INFO">Typing text 'diasgmail.com' into text field 'id=cadEmail'.</msg>
+<arg>id=cadEmail</arg>
+<arg>diasgmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:26.441325" elapsed="0.138919"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:26.580244" level="INFO">Typing password into text field 'id=cadSenha'.</msg>
+<msg time="2026-06-04T18:55:26.625094" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=cadSenha</arg>
+<arg>12345678</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:26.580244" elapsed="0.104299"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:26.693143" level="INFO">Typing text '2000-01-25' into text field 'id=cadData'.</msg>
+<arg>id=cadData</arg>
+<arg>2000-01-25</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:26.684543" elapsed="0.107659"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:26.793821" level="INFO">Clicking element 'id=btnCadastrar'.</msg>
+<arg>id=btnCadastrar</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-06-04T18:55:26.792202" elapsed="0.111202"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-06-04T18:55:27.905646" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-06-04T18:55:26.903404" elapsed="1.002242"/>
+</kw>
+<kw name="Element Should Be Focused" owner="SeleniumLibrary">
+<arg>id=cadEmail</arg>
+<doc>Verifies that element identified by ``locator`` is focused.</doc>
+<status status="PASS" start="2026-06-04T18:55:27.905646" elapsed="0.063108"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-06-04T18:55:28.127661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct05_email_invalido.png"&gt;&lt;img src="evidencia_ct05_email_invalido.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>evidencia_ct05_email_invalido.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-06-04T18:55:27.973513" elapsed="0.156845"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-06-04T18:55:28.130358" elapsed="2.467545"/>
+</kw>
+<status status="PASS" start="2026-06-04T18:55:23.796935" elapsed="6.800968"/>
+</test>
+<status status="PASS" start="2026-06-04T18:54:51.100549" elapsed="39.499377"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Cadastro" id="s1" pass="5" fail="0" skip="0">Cadastro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
