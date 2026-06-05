@@ -47,16 +47,55 @@ app.post('/login', (req, res) => {
 app.post('/assistido', (req, res) => {
     const { nome, peso, dataNascimento } = req.body;
 
-    if (!nome || nome.length < 2) return res.status(400).json({ mensagem: "Nome muito curto" });
-    if (!peso || peso <= 0) return res.status(400).json({ mensagem: "Peso deve ser maior que zero" }); 
+    // Nome
+    if (!nome || nome.length < 2) {
+        return res.status(400).json({ mensagem: "Nome muito curto" });
+    }
 
-    db.query('INSERT INTO assistidos (nome, peso, data_nascimento) VALUES (?, ?, ?)', 
-    [nome, peso, dataNascimento], (err) => {
-        if (err) return res.status(500).json({ erro: 'Erro interno' });
-        res.status(201).json({ mensagem: "Assistido cadastrado com sucesso" });
-    });
+    // Peso
+    if (!peso || peso <= 0) {
+        return res.status(400).json({ mensagem: "Peso deve ser maior que zero" });
+    }
+
+    // Data obrigatória
+    if (!dataNascimento) {
+        return res.status(400).json({
+            mensagem: "Data de nascimento é obrigatória"
+        });
+    }
+
+    // Data válida
+    const data = new Date(dataNascimento);
+
+    if (isNaN(data.getTime())) {
+        return res.status(400).json({
+            mensagem: "Data de nascimento inválida"
+        });
+    }
+
+    // Data não pode ser futura
+    if (data > new Date()) {
+        return res.status(400).json({
+            mensagem: "Data de nascimento não pode ser futura"
+        });
+    }
+
+    db.query(
+        'INSERT INTO assistidos (nome, peso, data_nascimento) VALUES (?, ?, ?)',
+        [nome, peso, dataNascimento],
+        (err) => {
+            if (err) {
+                return res.status(500).json({
+                    erro: 'Erro interno'
+                });
+            }
+
+            res.status(201).json({
+                mensagem: "Assistido cadastrado com sucesso"
+            });
+        }
+    );
 });
-
 
 app.post('/admin', (req, res) => {
     const { perfil } = req.body;
