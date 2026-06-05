@@ -1,376 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-06-05T14:55:33.595693" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.11.9 on win32)" generated="2026-06-05T15:03:52.667461" rpa="false" schemaversion="5">
 <suite id="s1" name="Assistido" source="C:\Users\diasa\OneDrive\Desktop\TesteDeSoftware\api-Rest-teste-em-software\testes\interface\assistido\assistido.robot">
 <test id="s1-t1" name="ASSISTIDO_CT01 - Deve cadastrar assistido com dados válidos" line="6">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:34.019342" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
+<msg time="2026-06-05T15:03:53.059484" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
 <arg>http://localhost:8080/assistido.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-05T14:55:34.019342" elapsed="3.436385"/>
+<status status="PASS" start="2026-06-05T15:03:53.059484" elapsed="1.646618"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:55:38.460182" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:03:55.706615" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:55:37.457744" elapsed="1.002438"/>
+<status status="PASS" start="2026-06-05T15:03:54.706102" elapsed="1.000513"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:38.460182" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
+<msg time="2026-06-05T15:03:55.708695" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
 <arg>id=assNome</arg>
 <arg>João da Silva</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:38.460182" elapsed="1.098348"/>
+<status status="PASS" start="2026-06-05T15:03:55.706615" elapsed="0.183706"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:39.558530" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
+<msg time="2026-06-05T15:03:55.890321" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
 <arg>id=assPeso</arg>
 <arg>70.5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:39.558530" elapsed="0.235430"/>
+<status status="PASS" start="2026-06-05T15:03:55.890321" elapsed="0.103144"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:39.795988" level="INFO">Typing text '1990-05-15' into text field 'id=assData'.</msg>
+<msg time="2026-06-05T15:03:55.993465" level="INFO">Typing text '1990-05-15' into text field 'id=assData'.</msg>
 <arg>id=assData</arg>
 <arg>1990-05-15</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:39.795988" elapsed="0.214462"/>
+<status status="PASS" start="2026-06-05T15:03:55.993465" elapsed="0.098590"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:40.012470" level="INFO">Clicking element 'id=btnAssistido'.</msg>
+<msg time="2026-06-05T15:03:56.094064" level="INFO">Clicking element 'id=btnAssistido'.</msg>
 <arg>id=btnAssistido</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:40.010450" elapsed="0.162688"/>
+<status status="PASS" start="2026-06-05T15:03:56.094064" elapsed="0.093856"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:55:42.173639" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-06-05T15:03:58.188490" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:55:40.173138" elapsed="2.000501"/>
+<status status="PASS" start="2026-06-05T15:03:56.187920" elapsed="2.000570"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:42.175650" level="INFO">Verifying element 'id=msgAssistido' contains exact text 'Assistido cadastrado com sucesso'.</msg>
+<msg time="2026-06-05T15:03:58.188490" level="INFO">Verifying element 'id=msgAssistido' contains exact text 'Assistido cadastrado com sucesso'.</msg>
 <arg>id=msgAssistido</arg>
 <arg>Assistido cadastrado com sucesso</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2026-06-05T14:55:42.175650" elapsed="0.042200"/>
+<status status="PASS" start="2026-06-05T15:03:58.188490" elapsed="0.046459"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:42.314160" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct01_sucesso.png"&gt;&lt;img src="evidencia_ct01_sucesso.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-05T15:03:58.346393" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct01_sucesso.png"&gt;&lt;img src="evidencia_ct01_sucesso.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>evidencia_ct01_sucesso.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-06-05T14:55:42.219612" elapsed="0.094548"/>
+<status status="PASS" start="2026-06-05T15:03:58.234949" elapsed="0.111444"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-05T14:55:42.315455" elapsed="2.600175"/>
+<status status="PASS" start="2026-06-05T15:03:58.346393" elapsed="2.472298"/>
 </kw>
-<status status="PASS" start="2026-06-05T14:55:34.019342" elapsed="10.896288"/>
+<status status="PASS" start="2026-06-05T15:03:53.051343" elapsed="7.768468"/>
 </test>
 <test id="s1-t2" name="ASSISTIDO_CT02 - Deve validar nome obrigatório" line="18">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:44.917645" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
+<msg time="2026-06-05T15:04:00.820957" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
 <arg>http://localhost:8080/assistido.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-05T14:55:44.917645" elapsed="1.794272"/>
+<status status="PASS" start="2026-06-05T15:04:00.820957" elapsed="1.622360"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:55:47.713928" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:03.448661" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:55:46.711917" elapsed="1.002011"/>
+<status status="PASS" start="2026-06-05T15:04:02.443317" elapsed="1.006405"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:47.715955" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
+<msg time="2026-06-05T15:04:03.449722" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
 <arg>id=assPeso</arg>
 <arg>70.5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:47.713928" elapsed="0.139530"/>
+<status status="PASS" start="2026-06-05T15:04:03.449722" elapsed="0.159621"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:47.853458" level="INFO">Typing text '1990-05-15' into text field 'id=assData'.</msg>
+<msg time="2026-06-05T15:04:03.609343" level="INFO">Typing text '15-05-1990' into text field 'id=assData'.</msg>
 <arg>id=assData</arg>
-<arg>1990-05-15</arg>
+<arg>15-05-1990</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:47.853458" elapsed="0.119560"/>
+<status status="PASS" start="2026-06-05T15:04:03.609343" elapsed="0.128906"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:47.975031" level="INFO">Clicking element 'id=btnAssistido'.</msg>
+<msg time="2026-06-05T15:04:03.744526" level="INFO">Clicking element 'id=btnAssistido'.</msg>
 <arg>id=btnAssistido</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:47.973018" elapsed="0.103050"/>
+<status status="PASS" start="2026-06-05T15:04:03.743404" elapsed="0.090819"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:55:49.079471" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:04.838961" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:55:48.078312" elapsed="1.001159"/>
+<status status="PASS" start="2026-06-05T15:04:03.834223" elapsed="1.004738"/>
 </kw>
 <kw name="Element Should Be Focused" owner="SeleniumLibrary">
 <arg>id=assNome</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="PASS" start="2026-06-05T14:55:49.082273" elapsed="0.058139"/>
+<status status="PASS" start="2026-06-05T15:04:04.841055" elapsed="0.042936"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:49.322634" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct02_nome_obrigatorio.png"&gt;&lt;img src="evidencia_ct02_nome_obrigatorio.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-05T15:04:05.025382" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct02_nome_obrigatorio.png"&gt;&lt;img src="evidencia_ct02_nome_obrigatorio.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>evidencia_ct02_nome_obrigatorio.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-06-05T14:55:49.140412" elapsed="0.183239"/>
+<status status="PASS" start="2026-06-05T15:04:04.883991" elapsed="0.143572"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-05T14:55:49.323651" elapsed="2.442286"/>
+<status status="PASS" start="2026-06-05T15:04:05.027563" elapsed="2.440089"/>
 </kw>
-<status status="PASS" start="2026-06-05T14:55:44.915630" elapsed="6.850307"/>
+<status status="PASS" start="2026-06-05T15:04:00.820957" elapsed="6.646695"/>
 </test>
 <test id="s1-t3" name="ASSISTIDO_CT03 - Deve validar peso obrigatório" line="29">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:51.765937" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
+<msg time="2026-06-05T15:04:07.467652" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
 <arg>http://localhost:8080/assistido.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-05T14:55:51.765937" elapsed="1.724593"/>
+<status status="PASS" start="2026-06-05T15:04:07.467652" elapsed="1.682899"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:55:54.494548" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:10.150754" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:55:53.492556" elapsed="1.001992"/>
+<status status="PASS" start="2026-06-05T15:04:09.150551" elapsed="1.001017"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:54.495562" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
+<msg time="2026-06-05T15:04:10.151568" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
 <arg>id=assNome</arg>
 <arg>João da Silva</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:54.495562" elapsed="0.150852"/>
+<status status="PASS" start="2026-06-05T15:04:10.151568" elapsed="0.158114"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:54.646414" level="INFO">Typing text '1990-05-15' into text field 'id=assData'.</msg>
+<msg time="2026-06-05T15:04:10.313126" level="INFO">Typing text '15-05-1990' into text field 'id=assData'.</msg>
 <arg>id=assData</arg>
-<arg>1990-05-15</arg>
+<arg>15-05-1990</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:54.646414" elapsed="0.162019"/>
+<status status="PASS" start="2026-06-05T15:04:10.309682" elapsed="0.096823"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:54.811154" level="INFO">Clicking element 'id=btnAssistido'.</msg>
+<msg time="2026-06-05T15:04:10.406505" level="INFO">Clicking element 'id=btnAssistido'.</msg>
 <arg>id=btnAssistido</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:55:54.810397" elapsed="0.107650"/>
+<status status="PASS" start="2026-06-05T15:04:10.406505" elapsed="0.097919"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:55:55.922136" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:11.505660" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:55:54.918047" elapsed="1.004089"/>
+<status status="PASS" start="2026-06-05T15:04:10.504424" elapsed="1.001236"/>
 </kw>
 <kw name="Element Should Be Focused" owner="SeleniumLibrary">
 <arg>id=assPeso</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="PASS" start="2026-06-05T14:55:55.922666" elapsed="0.039029"/>
+<status status="PASS" start="2026-06-05T15:04:11.505660" elapsed="0.045958"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:56.114866" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct03_peso_obrigatorio.png"&gt;&lt;img src="evidencia_ct03_peso_obrigatorio.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-05T15:04:11.704376" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct03_peso_obrigatorio.png"&gt;&lt;img src="evidencia_ct03_peso_obrigatorio.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>evidencia_ct03_peso_obrigatorio.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-06-05T14:55:55.961695" elapsed="0.154196"/>
+<status status="PASS" start="2026-06-05T15:04:11.551618" elapsed="0.152758"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-05T14:55:56.116422" elapsed="2.554304"/>
+<status status="PASS" start="2026-06-05T15:04:11.708681" elapsed="2.502744"/>
 </kw>
-<status status="PASS" start="2026-06-05T14:55:51.765937" elapsed="6.905563"/>
+<status status="PASS" start="2026-06-05T15:04:07.467652" elapsed="6.743773"/>
 </test>
 <test id="s1-t4" name="ASSISTIDO_CT04 - Deve validar data obrigatória" line="40">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:55:58.671500" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
+<msg time="2026-06-05T15:04:14.211425" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
 <arg>http://localhost:8080/assistido.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-05T14:55:58.671500" elapsed="1.698150"/>
+<status status="PASS" start="2026-06-05T15:04:14.211425" elapsed="1.657910"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:56:01.375382" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:16.869918" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:56:00.373635" elapsed="1.001747"/>
+<status status="PASS" start="2026-06-05T15:04:15.869335" elapsed="1.000583"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:01.375382" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
+<msg time="2026-06-05T15:04:16.869918" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
 <arg>id=assNome</arg>
 <arg>João da Silva</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:01.375382" elapsed="0.148627"/>
+<status status="PASS" start="2026-06-05T15:04:16.869918" elapsed="0.157510"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:01.525767" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
+<msg time="2026-06-05T15:04:17.028667" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
 <arg>id=assPeso</arg>
 <arg>70.5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:01.525767" elapsed="0.162779"/>
+<status status="PASS" start="2026-06-05T15:04:17.027428" elapsed="0.104335"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:01.688546" level="INFO">Clicking element 'id=btnAssistido'.</msg>
+<msg time="2026-06-05T15:04:17.134203" level="INFO">Clicking element 'id=btnAssistido'.</msg>
 <arg>id=btnAssistido</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:01.688546" elapsed="0.113082"/>
+<status status="PASS" start="2026-06-05T15:04:17.131763" elapsed="0.092543"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:56:02.809106" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:18.224912" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:56:01.808694" elapsed="1.000412"/>
+<status status="PASS" start="2026-06-05T15:04:17.224306" elapsed="1.000606"/>
 </kw>
 <kw name="Element Should Be Focused" owner="SeleniumLibrary">
 <arg>id=assData</arg>
 <doc>Verifies that element identified by ``locator`` is focused.</doc>
-<status status="PASS" start="2026-06-05T14:56:02.809106" elapsed="0.059109"/>
+<status status="PASS" start="2026-06-05T15:04:18.224912" elapsed="0.032194"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:03.032023" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct04_data_obrigatoria.png"&gt;&lt;img src="evidencia_ct04_data_obrigatoria.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-05T15:04:18.439524" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct04_data_obrigatoria.png"&gt;&lt;img src="evidencia_ct04_data_obrigatoria.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>evidencia_ct04_data_obrigatoria.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-06-05T14:56:02.875256" elapsed="0.156767"/>
+<status status="PASS" start="2026-06-05T15:04:18.257106" elapsed="0.189050"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-05T14:56:03.034899" elapsed="2.434669"/>
+<status status="PASS" start="2026-06-05T15:04:18.446967" elapsed="2.470204"/>
 </kw>
-<status status="PASS" start="2026-06-05T14:55:58.671500" elapsed="6.799464"/>
+<status status="PASS" start="2026-06-05T15:04:14.211425" elapsed="6.705746"/>
 </test>
 <test id="s1-t5" name="ASSISTIDO_CT05 - Deve validar data futura" line="51">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:05.470964" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
+<msg time="2026-06-05T15:04:20.921766" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
 <arg>http://localhost:8080/assistido.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-05T14:56:05.470964" elapsed="1.748610"/>
+<status status="PASS" start="2026-06-05T15:04:20.921766" elapsed="1.674768"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:56:08.219864" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:23.603202" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:56:07.219574" elapsed="1.000290"/>
+<status status="PASS" start="2026-06-05T15:04:22.601493" elapsed="1.001709"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:08.219864" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
+<msg time="2026-06-05T15:04:23.603202" level="INFO">Typing text 'João da Silva' into text field 'id=assNome'.</msg>
 <arg>id=assNome</arg>
 <arg>João da Silva</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:08.219864" elapsed="0.160516"/>
+<status status="PASS" start="2026-06-05T15:04:23.603202" elapsed="0.158860"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:08.381440" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
+<msg time="2026-06-05T15:04:23.762062" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
 <arg>id=assPeso</arg>
 <arg>70.5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:08.380928" elapsed="0.146671"/>
+<status status="PASS" start="2026-06-05T15:04:23.762062" elapsed="0.114586"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:08.528248" level="INFO">Typing text '2099-01-01' into text field 'id=assData'.</msg>
+<msg time="2026-06-05T15:04:23.876648" level="INFO">Typing text '01-01-2099' into text field 'id=assData'.</msg>
 <arg>id=assData</arg>
-<arg>2099-01-01</arg>
+<arg>01-01-2099</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:08.528248" elapsed="0.121756"/>
+<status status="PASS" start="2026-06-05T15:04:23.876648" elapsed="0.114638"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:08.650004" level="INFO">Clicking element 'id=btnAssistido'.</msg>
+<msg time="2026-06-05T15:04:23.991286" level="INFO">Clicking element 'id=btnAssistido'.</msg>
 <arg>id=btnAssistido</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:08.650004" elapsed="0.109037"/>
+<status status="PASS" start="2026-06-05T15:04:23.991286" elapsed="0.088716"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:56:10.761926" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-06-05T15:04:26.080827" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:56:08.759041" elapsed="2.002885"/>
+<status status="PASS" start="2026-06-05T15:04:24.080002" elapsed="2.000825"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:10.761926" level="INFO">Verifying element 'id=msgAssistido' contains exact text 'Data de nascimento não pode ser futura'.</msg>
+<msg time="2026-06-05T15:04:26.080827" level="INFO">Verifying element 'id=msgAssistido' contains exact text 'Data de nascimento não pode ser futura'.</msg>
 <arg>id=msgAssistido</arg>
 <arg>Data de nascimento não pode ser futura</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2026-06-05T14:56:10.761926" elapsed="0.059348"/>
+<status status="PASS" start="2026-06-05T15:04:26.080827" elapsed="0.058664"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:10.913516" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct05_data_futura.png"&gt;&lt;img src="evidencia_ct05_data_futura.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-05T15:04:26.239965" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct05_data_futura.png"&gt;&lt;img src="evidencia_ct05_data_futura.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>evidencia_ct05_data_futura.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-06-05T14:56:10.821274" elapsed="0.092242"/>
+<status status="PASS" start="2026-06-05T15:04:26.139491" elapsed="0.100474"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-05T14:56:10.918937" elapsed="2.477929"/>
+<status status="PASS" start="2026-06-05T15:04:26.246652" elapsed="2.476966"/>
 </kw>
-<status status="PASS" start="2026-06-05T14:56:05.470964" elapsed="7.925902"/>
+<status status="PASS" start="2026-06-05T15:04:20.917171" elapsed="7.806447"/>
 </test>
 <test id="s1-t6" name="ASSISTIDO_CT06 - Deve validar nome muito curto" line="63">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:13.399401" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
+<msg time="2026-06-05T15:04:28.723618" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/assistido.html'.</msg>
 <arg>http://localhost:8080/assistido.html</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-05T14:56:13.399401" elapsed="1.608562"/>
+<status status="PASS" start="2026-06-05T15:04:28.723618" elapsed="1.701362"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:56:16.010086" level="INFO">Slept 1 second.</msg>
+<msg time="2026-06-05T15:04:31.425233" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:56:15.007963" elapsed="1.002123"/>
+<status status="PASS" start="2026-06-05T15:04:30.424980" elapsed="1.000253"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:16.010086" level="INFO">Typing text 'A' into text field 'id=assNome'.</msg>
+<msg time="2026-06-05T15:04:31.425233" level="INFO">Typing text 'A' into text field 'id=assNome'.</msg>
 <arg>id=assNome</arg>
 <arg>A</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:16.010086" elapsed="0.140971"/>
+<status status="PASS" start="2026-06-05T15:04:31.425233" elapsed="0.128407"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:16.154118" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
+<msg time="2026-06-05T15:04:31.553640" level="INFO">Typing text '70.5' into text field 'id=assPeso'.</msg>
 <arg>id=assPeso</arg>
 <arg>70.5</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:16.151057" elapsed="0.111940"/>
+<status status="PASS" start="2026-06-05T15:04:31.553640" elapsed="0.104769"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:16.270618" level="INFO">Typing text '1990-05-15' into text field 'id=assData'.</msg>
+<msg time="2026-06-05T15:04:31.662335" level="INFO">Typing text '15-05-1990' into text field 'id=assData'.</msg>
 <arg>id=assData</arg>
-<arg>1990-05-15</arg>
+<arg>15-05-1990</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:16.269668" elapsed="0.102609"/>
+<status status="PASS" start="2026-06-05T15:04:31.658409" elapsed="0.099760"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:16.372277" level="INFO">Clicking element 'id=btnAssistido'.</msg>
+<msg time="2026-06-05T15:04:31.758169" level="INFO">Clicking element 'id=btnAssistido'.</msg>
 <arg>id=btnAssistido</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-05T14:56:16.372277" elapsed="0.116471"/>
+<status status="PASS" start="2026-06-05T15:04:31.758169" elapsed="0.105296"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-06-05T14:56:18.490630" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-06-05T15:04:33.867860" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-06-05T14:56:16.488748" elapsed="2.001882"/>
+<status status="PASS" start="2026-06-05T15:04:31.865790" elapsed="2.002070"/>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:18.491645" level="INFO">Verifying element 'id=msgAssistido' contains exact text 'Nome muito curto'.</msg>
+<msg time="2026-06-05T15:04:33.869875" level="INFO">Verifying element 'id=msgAssistido' contains exact text 'Nome muito curto'.</msg>
 <arg>id=msgAssistido</arg>
 <arg>Nome muito curto</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2026-06-05T14:56:18.491645" elapsed="0.068479"/>
+<status status="PASS" start="2026-06-05T15:04:33.867860" elapsed="0.063946"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2026-06-05T14:56:18.648593" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct06_nome_curto.png"&gt;&lt;img src="evidencia_ct06_nome_curto.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-05T15:04:34.016532" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="evidencia_ct06_nome_curto.png"&gt;&lt;img src="evidencia_ct06_nome_curto.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>evidencia_ct06_nome_curto.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2026-06-05T14:56:18.560124" elapsed="0.088469"/>
+<status status="PASS" start="2026-06-05T15:04:33.931806" elapsed="0.084726"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-06-05T14:56:18.653581" elapsed="2.467077"/>
+<status status="PASS" start="2026-06-05T15:04:34.018982" elapsed="2.511278"/>
 </kw>
-<status status="PASS" start="2026-06-05T14:56:13.399401" elapsed="7.721257"/>
+<status status="PASS" start="2026-06-05T15:04:28.723618" elapsed="7.806642"/>
 </test>
-<status status="PASS" start="2026-06-05T14:55:33.595693" elapsed="47.524965"/>
+<status status="PASS" start="2026-06-05T15:03:52.674227" elapsed="43.856033"/>
 </suite>
 <statistics>
 <total>

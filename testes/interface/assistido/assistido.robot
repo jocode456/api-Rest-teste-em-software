@@ -19,7 +19,7 @@ ASSISTIDO_CT02 - Deve validar nome obrigatório
     Open Browser    http://localhost:8080/assistido.html    chrome
     Sleep    1s
     Input Text        id=assPeso    70.5
-    Input Text        id=assData    1990-05-15
+    Input Text        id=assData    15-05-1990
     Click Element     id=btnAssistido
     Sleep    1s
     Element Should Be Focused    id=assNome
@@ -30,7 +30,7 @@ ASSISTIDO_CT03 - Deve validar peso obrigatório
     Open Browser    http://localhost:8080/assistido.html    chrome
     Sleep    1s
     Input Text        id=assNome    João da Silva
-    Input Text        id=assData    1990-05-15
+    Input Text        id=assData    15-05-1990
     Click Element     id=btnAssistido
     Sleep    1s
     Element Should Be Focused    id=assPeso
@@ -53,7 +53,7 @@ ASSISTIDO_CT05 - Deve validar data futura
     Sleep    1s
     Input Text        id=assNome    João da Silva
     Input Text        id=assPeso    70.5
-    Input Text        id=assData    2099-01-01
+    Input Text        id=assData    01-01-2099
     Click Element     id=btnAssistido
     Sleep    2s
     Element Text Should Be    id=msgAssistido    Data de nascimento não pode ser futura
@@ -65,7 +65,7 @@ ASSISTIDO_CT06 - Deve validar nome muito curto
     Sleep    1s
     Input Text        id=assNome    A
     Input Text        id=assPeso    70.5
-    Input Text        id=assData    1990-05-15
+    Input Text        id=assData    15-05-1990
     Click Element     id=btnAssistido
     Sleep    2s
     Element Text Should Be    id=msgAssistido    Nome muito curto
